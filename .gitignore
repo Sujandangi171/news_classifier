@@ -1,0 +1,52 @@
+# =========================
+# Python cache
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# =========================
+# Virtual environment
+# =========================
+venv/
+env/
+.venv/
+
+# =========================
+# Jupyter Notebook checkpoints
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Data files (VERY IMPORTANT)
+# =========================
+data/
+*.csv
+*.json
+*.xlsx
+
+# If you want to keep ONLY structure, not data
+
+# =========================
+# Model files (VERY IMPORTANT for GitHub size)
+# =========================
+models/
+*.pkl
+*.joblib
+
+# =========================
+# Streamlit cache
+# =========================
+.streamlit/
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs
+# =========================
+*.log
