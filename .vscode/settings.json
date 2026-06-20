@@ -1,0 +1,14 @@
+{
+    "cSpell.words": [
+        "lemmatization",
+        "lemmatizer",
+        "Lemmatizer",
+        "stopwords",
+        "Tfidf",
+        "Vectorizer",
+        "vectorizers"
+    ],
+    "cSpell.ignoreWords": [
+        "WORLDPOST"
+    ]
+}
