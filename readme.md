@@ -1,88 +1,165 @@
-📰 News Headline Classification System (NLP + Machine Learning)
-🚀 Overview
+# 📰 News Headline Classification System (NLP + Machine Learning)
 
-This project is an end-to-end Natural Language Processing (NLP) system that classifies news headlines into predefined categories using machine learning. It includes full pipeline development — from data preprocessing and model training to evaluation and deployment using a Streamlit web application.
+## 🚀 Overview
 
-The system allows users to input any news headline and instantly receive a predicted category along with confidence scores.
+This project is an **end-to-end Natural Language Processing (NLP)** application that classifies news headlines into predefined categories using machine learning techniques.
 
-🎯 Objective
-Build a text classification system for news headlines
-Compare different ML models and vectorization techniques
-Handle real-world text data using NLP preprocessing
-Deploy the best-performing model as a web application
+The project covers the complete workflow, including:
 
-📊 Dataset
-Source: Kaggle News Category Dataset
-Format: JSON
-Fields used:
-headline
-category
-Example categories:
-Politics
-Sports
-Technology
-Business
-Entertainment
-World News
-Science
-⚙️ Tech Stack
-Python 🐍
-Pandas / NumPy
-NLTK (text preprocessing)
-Scikit-learn (ML models)
-TF-IDF / Bag of Words
-Streamlit (web app)
-Joblib (model saving)
-🧠 Machine Learning Workflow
-1. Data Preprocessing
-Lowercasing text
-Removing special characters and numbers
-Stopword removal
-Lemmatization
-2. Feature Extraction
-CountVectorizer (Bag of Words)
-TF-IDF Vectorizer
-3. Model Training & Comparison
+* Data preprocessing
+* Feature extraction
+* Model training and comparison
+* Performance evaluation
+* Model deployment using **Streamlit**
 
-Models tested:
+Users can enter any news headline and instantly receive:
 
-Naive Bayes
-Logistic Regression
-Linear SVM
-Random Forest
+* Predicted category
+* Confidence scores for all classes
 
-4. Model Selection
+---
 
-The best model is selected based on:
+## 🎯 Objective
 
-Accuracy
-F1-score
-Precision / Recall
-5. Deployment
+* Build a text classification system for news headlines.
+* Compare different machine learning models and vectorization techniques.
+* Handle real-world text data through NLP preprocessing.
+* Deploy the best-performing model as an interactive web application.
 
-Final model is deployed using Streamlit for real-time predictions.
+---
 
-🏆 Best Model
-Model: Logistic Regression / Linear SVM
-Vectorizer: TF-IDF
-Optimization: Class weighting for imbalance handling
+## 📊 Dataset
 
-📈 Performance
-Accuracy: ~82%–90% (depending on class setup)
-Evaluation metrics:
-Precision
-Recall
-F1-score
-Confusion Matrix
+**Source:** Kaggle News Category Dataset
 
-🖥️ Streamlit App Features
-Enter custom news headlines
-Get instant category prediction
-View confidence scores for all classes
-Sample headlines for quick testing
-Clean interactive UI
+**Format:** JSON
 
-📂 Project Structure
+### Features Used
+
+* `headline`
+* `category`
+
+### Example Categories
+
+* Politics
+* Sports
+* Technology
+* Business
+* Entertainment
+* World News
+* Science
+
+---
+
+## ⚙️ Tech Stack
+
+* **Python 🐍**
+* **Pandas**
+* **NumPy**
+* **NLTK** (Text Preprocessing)
+* **Scikit-learn**
+* **CountVectorizer (Bag of Words)**
+* **TF-IDF Vectorizer**
+* **Joblib**
+* **Streamlit**
+
+---
+
+# 🧠 Machine Learning Workflow
+
+## 1. Data Preprocessing
+
+The following NLP preprocessing techniques are applied:
+
+* Convert text to lowercase
+* Remove special characters and numbers
+* Remove stopwords
+* Perform lemmatization
+
+---
+
+## 2. Feature Extraction
+
+Two vectorization techniques were explored:
+
+### 🔹 CountVectorizer (Bag of Words)
+
+Converts text into frequency-based vectors.
+
+### 🔹 TF-IDF Vectorizer
+
+Transforms text into weighted feature vectors based on term importance.
+
+---
+
+## 3. Model Training and Comparison
+
+The following machine learning algorithms were evaluated:
+
+| Model               | Description                               |
+| ------------------- | ----------------------------------------- |
+| Naive Bayes         | Fast probabilistic classifier             |
+| Logistic Regression | Linear classifier with strong performance |
+| Linear SVM          | Effective for text classification         |
+| Random Forest       | Ensemble-based classifier                 |
+
+---
+
+## 4. Model Selection
+
+Models were compared using:
+
+* Accuracy
+* Precision
+* Recall
+* F1-score
+
+The best model was selected based on overall performance.
+
+---
+
+## 🏆 Best Model
+
+| Component    | Selected Method                        |
+| ------------ | -------------------------------------- |
+| Model        | Logistic Regression / Linear SVM       |
+| Vectorizer   | TF-IDF                                 |
+| Optimization | Class weighting for imbalance handling |
+
+---
+
+## 📈 Performance
+
+### Accuracy
+
+**≈ 82% – 90%** *(depending on the number of classes)*
+
+### Evaluation Metrics
+
+* Precision
+* Recall
+* F1-score
+* Confusion Matrix
+
+---
+
+# 🖥️ Streamlit Application Features
+
+✅ Enter custom news headlines
+
+✅ Get instant category predictions
+
+✅ View confidence scores for all categories
+
+✅ Try sample headlines for quick testing
+
+✅ Interactive and user-friendly interface
+
+---
+
+# 📂 Project Structure
+
+```text
 news_classifier/
 │
 ├── data/
@@ -105,39 +182,85 @@ news_classifier/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
+```
 
-🚀 How to Run This Project
-1️⃣ Install dependencies
+---
+
+# 🚀 How to Run the Project
+
+## 1️⃣ Install Dependencies
+
+```bash
 pip install -r requirements.txt
-2️⃣ Run preprocessing & training notebooks
+```
 
-Open Jupyter Notebook:
+---
 
+## 2️⃣ Run Jupyter Notebooks
+
+Start Jupyter Notebook:
+
+```bash
 jupyter notebook
+```
 
-Run:
+Run the notebooks in the following order:
 
-01_data_preprocessing.ipynb
-02_model_comparison.ipynb
-03_final_model_training.ipynb
-3️⃣ Train model (optional script)
+1. `01_data_preprocessing.ipynb`
+2. `02_model_comparison.ipynb`
+3. `03_final_model_training.ipynb`
+
+---
+
+## 3️⃣ Train the Model (Optional)
+
+```bash
 python train.py
-4️⃣ Run Streamlit app
+```
+
+---
+
+## 4️⃣ Launch the Streamlit App
+
+```bash
 streamlit run app.py
-🧪 Example Predictions
-Input Headline	Predicted Category
-NASA launches new Mars mission	Science / Tech
-Government passes new tax law	Politics
-Messi scores winning goal	Sports
-Apple releases new iPhone	Technology
-📌 Key Learnings
-NLP text preprocessing pipeline
-Feature extraction using TF-IDF
-Model comparison and evaluation
-Handling class imbalance
-Deployment using Streamlit
-⚠️ Future Improvements
-Add deep learning models (LSTM / BERT)
-Improve handling of class imbalance
-Deploy on cloud (Streamlit Cloud / HuggingFace Spaces)
-Add real-time news scraping
+```
+
+---
+
+# 🧪 Example Predictions
+
+| Input Headline                 | Predicted Category   |
+| ------------------------------ | -------------------- |
+| NASA launches new Mars mission | Science / Technology |
+| Government passes new tax law  | Politics             |
+| Messi scores winning goal      | Sports               |
+| Apple releases new iPhone      | Technology           |
+
+---
+
+# 📚 Key Learnings
+
+Through this project, I learned:
+
+* NLP text preprocessing techniques
+* Feature extraction using TF-IDF
+* Machine learning model comparison
+* Handling class imbalance
+* Model evaluation using classification metrics
+* Building and deploying applications with Streamlit
+
+---
+
+# 🔮 Future Improvements
+
+* Implement deep learning models (**LSTM**, **BERT**)
+* Improve class imbalance handling
+* Deploy on **Streamlit Cloud** or **Hugging Face Spaces**
+* Add real-time news scraping
+* Create REST API support using Flask/FastAPI
+* Fine-tune transformer models for higher accuracy
+
+---
+
+## ⭐ If you found this project helpful, consider giving it a star!
