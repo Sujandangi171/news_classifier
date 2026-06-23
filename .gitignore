@@ -19,19 +19,13 @@ env/
 .ipynb_checkpoints/
 
 # =========================
-# Data files (VERY IMPORTANT)
+# Data files
 # =========================
-data/
-*.csv
-*.json
-*.xlsx
-
-# If you want to keep ONLY structure, not data
+data/News_Category_Dataset.json
 
 # =========================
-# Model files (VERY IMPORTANT for GitHub size)
+# Model files
 # =========================
-models/
 *.pkl
 *.joblib
 

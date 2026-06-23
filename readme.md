@@ -10,6 +10,7 @@ Build a text classification system for news headlines
 Compare different ML models and vectorization techniques
 Handle real-world text data using NLP preprocessing
 Deploy the best-performing model as a web application
+
 📊 Dataset
 Source: Kaggle News Category Dataset
 Format: JSON
@@ -49,6 +50,7 @@ Naive Bayes
 Logistic Regression
 Linear SVM
 Random Forest
+
 4. Model Selection
 
 The best model is selected based on:
@@ -64,6 +66,7 @@ Final model is deployed using Streamlit for real-time predictions.
 Model: Logistic Regression / Linear SVM
 Vectorizer: TF-IDF
 Optimization: Class weighting for imbalance handling
+
 📈 Performance
 Accuracy: ~82%–90% (depending on class setup)
 Evaluation metrics:
@@ -71,12 +74,14 @@ Precision
 Recall
 F1-score
 Confusion Matrix
+
 🖥️ Streamlit App Features
 Enter custom news headlines
 Get instant category prediction
 View confidence scores for all classes
 Sample headlines for quick testing
 Clean interactive UI
+
 📂 Project Structure
 news_classifier/
 │
@@ -100,6 +105,7 @@ news_classifier/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
+
 🚀 How to Run This Project
 1️⃣ Install dependencies
 pip install -r requirements.txt

@@ -1,14 +1,22 @@
 {
     "cSpell.words": [
+        "ipynb",
+        "joblib",
         "lemmatization",
         "lemmatizer",
         "Lemmatizer",
+        "pycache",
         "stopwords",
+        "streamlit",
+        "Streamlit",
         "Tfidf",
         "Vectorizer",
-        "vectorizers"
+        "vectorizers",
+        "venv"
     ],
     "cSpell.ignoreWords": [
-        "WORLDPOST"
+        "WORLDPOST",
+        "corrcoef",
+        "ngram"
     ]
 }
