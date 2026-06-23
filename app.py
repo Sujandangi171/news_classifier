@@ -42,6 +42,7 @@ samples = [
     "Apple releases new AI-powered iPhone update",
     "Stock markets fall due to global recession fears",
     "Scientists discover water on a distant exoplanet",
+    "6 Months Into War, Russian Goods Still Flowing To U.S",
     "Parliament passes controversial new tax bill",
     "India wins cricket world cup in thrilling final"
 ]
